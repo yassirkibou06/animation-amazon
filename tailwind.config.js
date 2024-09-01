@@ -44,6 +44,9 @@ module.exports = {
         "main-xl": "290px 900px 96px",
         "main-lg": "280px 870px 96px"
       },
+      screens: {
+        '1xl': '1400px',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

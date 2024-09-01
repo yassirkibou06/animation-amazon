@@ -10,7 +10,7 @@ import RightSection from "@/components/RightSection";
 
 export default function Home() {
   return (
-    <main className="bg-primary h-fit p-6 grid lg:grid-cols-main-lg lg:gap-8 2xl:gap-12 2xl:grid-cols-main-xl overflow-hidden">
+    <main className="bg-primary h-fit p-6 grid lg:grid-cols-main-lg lg:gap-8 1xl:gap-12 1xl:grid-cols-main-xl overflow-hidden">
       {/**left section */}
       <motion.div>
         {/* input of seacrh bar */}
