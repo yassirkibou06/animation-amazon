@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const RightSection = () => {
   return (
-    <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.3, ease: "easeInOut" }} className="h-full">
+    <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }} className="h-full">
       <motion.div className="w-[80px] h-[80px] rounded-full bg-secondary flex items-center justify-center mb-8">
         <motion.img initial={{ opacity: 0, transform: 'translate3d(-200px, 60px, 160px)' }}
           animate={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}

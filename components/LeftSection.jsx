@@ -8,13 +8,13 @@ const LeftSection = props => {
     const data = [
         {
             id: 1,
-            img: "/assets/n1.jpg",
+            img: "https://images.unsplash.com/photo-1548949974-5a40c9a4de55?q=80&w=1413&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Homepod",
             price: "$30.00",
         },
         {
             id: 2,
-            img: "/assets/n2.jpg",
+            img: "https://images.unsplash.com/photo-1521499892833-773a6c6fd0b8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Camera",
             price: "$600",
         }
@@ -23,18 +23,18 @@ const LeftSection = props => {
     const dataTwo = [
         {
             id: 1,
-            img: "/assets/n3.png",
+            img: "https://th.bing.com/th/id/OIP.YK9woSy8AjQfoDYqMB5jWQHaEK?rs=1&pid=ImgDetMain",
             title: "Asus Zenbook 14",
         },
         {
             id: 2,
-            img: "/assets/n4.png",
+            img: "https://th.bing.com/th/id/OIP.pGa2uGNan06L6IVg6ZX3jAHaFj?w=245&h=184&c=7&r=0&o=5&pid=1.7",
             title: "Iphone 14 Pro Max Case",
         }
     ]
 
     return (
-        <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1.3, x: 0 }} transition={{ duration: 1, ease: "easeInOut" }}>
+        <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1.4, x: 0 }} transition={{ duration: 1, ease: "easeInOut" }}>
         {/* cards top picks */}
             <div className="bg-white rounded-[56px] mt-6 py-12 px-6">
                 <div className="flex items-center space-x-2">
@@ -45,7 +45,7 @@ const LeftSection = props => {
                 {data.map((item, index) => (
                     <div key={index} className="mt-4 relative">
                         <div className="absolute top-0 left-0 w-full h-full bg-black/30 rounded-[32px]"></div>
-                        <img src={item.img} alt="apple" className="rounded-[32px] object-cover w-full h-[220px]" />
+                        <img src={item.img} alt="apple" className="rounded-[32px] object-cover h-[220px]" />
                         <div className="absolute bottom-2 flex justify-between items-center w-full px-4">
                             <div className="text-white">
                                 <h3>{item.title}</h3>

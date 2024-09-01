@@ -77,7 +77,7 @@ const MidSection = () => {
             </div>
             {/**Card ======= */}
             <motion.div className="z-10 absolute top-[657px] -left-1 rounded-[90px] w-[554px] h-[320px] bg-primary p-4">
-                <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.3, ease: "easeInOut" }}
+                <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }}
                     className="rounded-[90px] w-full h-full bg-secondary px-8 py-16">
                     <h2 className="font-medium mb-4">Explore Categories</h2>
                     <div className="grid gap-4 grid-cols-4">
