@@ -34,7 +34,7 @@ const LeftSection = props => {
     ]
 
     return (
-        <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1.4, x: 0 }} transition={{ duration: 1, ease: "easeInOut" }}>
+        <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1.4, x: 0 }} transition={{ duration: 1, delay: 0.6, ease: "easeInOut" }}>
         {/* cards top picks */}
             <div className="bg-white rounded-[56px] mt-6 py-12 px-6">
                 <div className="flex items-center space-x-2">

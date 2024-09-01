@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const RightSection = () => {
   return (
-    <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }} className="h-full">
+    <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.4, delay: 0.6, ease: "easeInOut" }} className="h-full">
       <motion.div className="w-[80px] h-[80px] rounded-full bg-secondary flex items-center justify-center mb-8">
         <motion.img initial={{ opacity: 0, transform: 'translate3d(-200px, 60px, 160px)' }}
           animate={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
-          transition={{ duration: 1.5, ease: "easeInOut" }} src="/assets/AMAZONV2.svg" alt="amazon" width={32} height={32} />
+          transition={{ duration: 1.5, delay: 0.7, ease: "easeInOut" }} src="/assets/AMAZONV2.svg" alt="amazon" width={32} height={32} />
       </motion.div>
       {/**========= */}
       <div className="bg-white py-10 px-4 w-full h-[864px] rounded-[90px] shadow-sm shadow-white flex flex-col items-center justify-between">
