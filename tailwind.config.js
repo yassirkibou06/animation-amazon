@@ -41,7 +41,8 @@ module.exports = {
         'accent': '#2a2b2d',
       },
       gridTemplateColumns: {
-        "main": "290px 900px 96px"
+        "main-xl": "290px 900px 96px",
+        "main-lg": "280px 870px 96px"
       },
     },
   },

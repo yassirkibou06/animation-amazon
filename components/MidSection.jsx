@@ -49,14 +49,14 @@ const MidSection = () => {
     return (
         <motion.div className="relative w-full h-full rounded-[90px] bg-black">
             {/* Embed video as background */}
-            {/*<video
+            <video
                 className="absolute top-0 left-0 w-full h-full object-cover rounded-[90px]"
                 src="/assets/v1.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-            ></video>**/}
+            ></video>
 
             {/* Foreground Elements */}
             <div className="z-20 absolute top-1/2 -right-5 transform -translate-y-1/2 rounded-full w-20 h-20 bg-secondary flex justify-center items-center">
@@ -102,7 +102,7 @@ const MidSection = () => {
             <div className="z-0 absolute bottom-0 left-[550px] rounded-bl-[90px] w-[88px] h-[90px] bg-transparent shadow-card-lb"></div>
             <div className="z-0 absolute bottom-0 left-[460px] w-[100px] h-[42px] bg-primary shadow-overflow"></div>
             {/**======= */}
-            <div className="absolute bottom-10 right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
+            <div className="absolute bottom-10 lg:right-4 2xl:right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
                 <div className="flex items-center flex-col rounded-sm border-r border-r-gray-300 px-6">
                     <BiHeart size={27} />
                     <p className="font-light text-sm">14K</p>

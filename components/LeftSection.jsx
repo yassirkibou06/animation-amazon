@@ -8,13 +8,13 @@ const LeftSection = props => {
     const data = [
         {
             id: 1,
-            img: "https://images.unsplash.com/photo-1548949974-5a40c9a4de55?q=80&w=1413&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            img: "/assets/n1.jpg",
             title: "Homepod",
             price: "$30.00",
         },
         {
             id: 2,
-            img: "https://images.unsplash.com/photo-1521499892833-773a6c6fd0b8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            img: "/assets/n2.jpg",
             title: "Camera",
             price: "$600",
         }
@@ -23,12 +23,12 @@ const LeftSection = props => {
     const dataTwo = [
         {
             id: 1,
-            img: "https://th.bing.com/th/id/OIP.YK9woSy8AjQfoDYqMB5jWQHaEK?rs=1&pid=ImgDetMain",
+            img: "/assets/n3.png",
             title: "Asus Zenbook 14",
         },
         {
             id: 2,
-            img: "https://th.bing.com/th/id/OIP.pGa2uGNan06L6IVg6ZX3jAHaFj?w=245&h=184&c=7&r=0&o=5&pid=1.7",
+            img: "/assets/n4.png",
             title: "Iphone 14 Pro Max Case",
         }
     ]
@@ -45,7 +45,7 @@ const LeftSection = props => {
                 {data.map((item, index) => (
                     <div key={index} className="mt-4 relative">
                         <div className="absolute top-0 left-0 w-full h-full bg-black/30 rounded-[32px]"></div>
-                        <img src={item.img} alt="apple" className="rounded-[32px] object-cover h-[220px]" />
+                        <img src={item.img} alt="apple" className="rounded-[32px] object-cover w-full h-[220px]" />
                         <div className="absolute bottom-2 flex justify-between items-center w-full px-4">
                             <div className="text-white">
                                 <h3>{item.title}</h3>

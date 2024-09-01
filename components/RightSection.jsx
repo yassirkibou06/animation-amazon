@@ -17,20 +17,20 @@ const RightSection = () => {
           <div className="bg-black shadow-xl shadow-black/30 rounded-3xl p-[20px] flex items-center justify-center text-2xl text-white">
             <BiHomeAlt2 />
           </div>
-          <div className="rounded-3xl p-[20px] flex items-center justify-center text-2xl">
+          <div className="cursor-pointer rounded-3xl p-[20px] flex items-center justify-center text-2xl transition-all hover:bg-black hover:text-white hover:shadow-xl hover:shadow-black/30">
             <BiUser />
           </div>
-          <div className="relative rounded-3xl p-[20px] flex items-center justify-center text-2xl">
+          <div className="relative cursor-pointer rounded-3xl p-[20px] flex items-center justify-center text-2xl transition-all hover:bg-black hover:text-white hover:shadow-xl hover:shadow-black/30">
             <BiBell />
             <span className="absolute top-2 right-3 w-5 h-5 text-[12px] rounded-full bg-secondary flex items-center justify-center">1</span>
           </div>
-          <div className="rounded-3xl p-[20px] flex items-center justify-center text-2xl">
+          <div className="cursor-pointer rounded-3xl p-[20px] flex items-center justify-center text-2xl transition-all hover:bg-black hover:text-white hover:shadow-xl hover:shadow-black/30">
             <BiSearch />
           </div>
-          <div className="rounded-3xl p-[20px] flex items-center justify-center text-2xl">
+          <div className="cursor-pointer rounded-3xl p-[20px] flex items-center justify-center text-2xl transition-all hover:bg-black hover:text-white hover:shadow-xl hover:shadow-black/30">
             <BiShoppingBag />
           </div>
-          <div className="rounded-3xl p-[20px] flex items-center justify-center text-2xl">
+          <div className="cursor-pointer rounded-3xl p-[20px] flex items-center justify-center text-2xl transition-all hover:bg-black hover:text-white hover:shadow-xl hover:shadow-black/30">
             <BiHeart />
           </div>
         </div>
