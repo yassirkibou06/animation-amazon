@@ -10,7 +10,7 @@ const RightSection = () => {
       </motion.div>
       {/**========= */}
       <div className="fixed left-0 bottom-0 lg:relative bg-white py-2 px-2 lg:py-10 lg:px-4 w-full h-fit lg:h-[864px] rounded-tl-[24px] rounded-tr-[24px] lg:rounded-[90px] shadow-sm shadow-white flex flex-row lg:flex-col items-center justify-between">
-        <div className="flex flex-row space-x-4 lg:space-x-0 lg:flex-col lg:space-y-6">
+        <div className="flex flex-row space-x-6 lg:space-x-0 lg:flex-col lg:space-y-6">
           <div className="bg-black shadow-xl shadow-black/30 rounded-3xl p-[20px] flex items-center justify-center text-lg lg:text-2xl text-white">
             <BiHomeAlt2 />
           </div>
