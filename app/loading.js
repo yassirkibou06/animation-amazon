@@ -29,9 +29,9 @@ export default function Loading({ all }) {
                 </div>
             ) : (
                 <>
-                    <motion.div initial={{ opacity: 1, height: "50%" }} animate={{ opacity: 1, height: "0%" }} exit={{ opacity: 0, height: "0%" }} transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }} className="shadow-sm absolute z-[9999] top-0 bg-white w-full h-1/2" ></motion.div>
+                    <motion.div initial={{ opacity: 1, height: "50%" }} animate={{ opacity: 1, height: "0%" }} exit={{ opacity: 0, height: "0%" }} transition={{ duration: 0.8, delay: 0.5, ease: "easeIn" }} className="shadow-sm absolute z-[9999] top-0 bg-white w-full h-1/2" ></motion.div>
                     {all}
-                    <motion.div initial={{ opacity: 1, height: "50%" }} animate={{ opacity: 1, height: "0%" }} exit={{ opacity: 0, height: "0%" }} transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }} className="shadow-sm absolute z-[9999] bottom-0 bg-white w-full h-1/2"></motion.div>
+                    <motion.div initial={{ opacity: 1, height: "50%" }} animate={{ opacity: 1, height: "0%" }} exit={{ opacity: 0, height: "0%" }} transition={{ duration: 0.8, delay: 0.5, ease: "easeIn" }} className="shadow-sm absolute z-[9999] bottom-0 bg-white w-full h-1/2"></motion.div>
                 </>
             )}
         </>
