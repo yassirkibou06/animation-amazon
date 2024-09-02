@@ -56,7 +56,7 @@ const MidSection = () => {
                 <BiRightArrowAlt size={23} />
             </div>
             <div className="z-0 absolute top-1/2 -right-1 transform -translate-y-1/2 rounded-bl-[110px] rounded-tl-[110px] w-[75px] h-[120px] bg-primary"></div>
-            <div className="z-0 absolute top-[220px] lg:top-[352px] right-0 rounded-br-[120px] w-[40px] h-[80px] bg-transparent shadow-card-tp"></div>
+            <div className="z-0 absolute top-[300px] lg:top-[352px] right-0 rounded-br-[120px] w-[40px] h-[80px] bg-transparent shadow-card-tp"></div>
             <div className="z-0 absolute top-[390px] lg:top-[544px] right-0 rounded-tr-[120px] w-[40px] h-[80px] bg-transparent shadow-card-bt"></div>
             {/**Content */}
             <div className="absolute top-[48%] lg:top-[55%] left-4 lg:left-8 transform -translate-y-1/2 w-[500px]">
@@ -95,7 +95,7 @@ const MidSection = () => {
             <div className="hidden lg:block z-0 absolute bottom-0 left-[550px] rounded-bl-[90px] w-[88px] h-[90px] bg-transparent shadow-card-lb"></div>
             <div className="hidden lg:block z-0 absolute bottom-0 left-[460px] w-[100px] h-[42px] bg-primary shadow-overflow"></div>
             {/**======= */}
-            <div className="absolute bottom-10 right-6 lg:right-4 1xl:right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
+            <div className="absolute bottom-10 right-8 lg:right-4 1xl:right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
                 <div className="flex items-center flex-col rounded-sm border-r border-r-gray-300 px-6">
                     <BiHeart size={27} />
                     <p className="font-light text-sm">14K</p>
