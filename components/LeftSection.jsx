@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 "use client"
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { BiSolidBarChartAlt2, BiDotsVerticalRounded, BiShoppingBag, BiSolidSpreadsheet } from "react-icons/bi";
-
 
 const LeftSection = props => {
     const data = [
@@ -35,7 +34,7 @@ const LeftSection = props => {
 
     return (
         <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1.4, x: 0 }} transition={{ duration: 1, delay: 0.6, ease: "easeInOut" }}>
-        {/* cards top picks */}
+            {/* cards top picks */}
             <div className="bg-white rounded-[56px] mt-6 py-12 px-6">
                 <div className="flex items-center space-x-2">
                     <BiSolidBarChartAlt2 className="text-secondary text-2xl" />
@@ -45,7 +44,7 @@ const LeftSection = props => {
                 {data.map((item, index) => (
                     <div key={index} className="mt-4 relative">
                         <div className="absolute top-0 left-0 w-full h-full bg-black/30 rounded-[32px]"></div>
-                        <img src={item.img} alt="apple" className="rounded-[32px] object-cover h-[220px]" />
+                        <Image src={item.img} alt={item.title} width={500} height={250} className="rounded-[32px] w-full h-[220px] object-cover" />
                         <div className="absolute bottom-2 flex justify-between items-center w-full px-4">
                             <div className="text-white">
                                 <h3>{item.title}</h3>
@@ -63,7 +62,7 @@ const LeftSection = props => {
                 </div>
             </div>
             {/* last orders */}
-            <div className="bg-white rounded-[56px] mt-4 py-12 px-6">
+            <div className="bg-white rounded-[56px] mt-4 py-12 px-6 mb-16 lg:mb-0">
                 <div className="flex items-center space-x-2">
                     <BiSolidSpreadsheet className="text-secondary text-2xl" />
                     <h2 className="font-medium">Last Orders</h2>
@@ -73,7 +72,7 @@ const LeftSection = props => {
                     <div key={index} className="relative mt-4 flex space-x-2 items-center p-1 bg-gray-100/50 rounded-[32px]">
                         <div className="relative">
                             <div className="absolute left-0 top-0 w-full h-full bg-black/30 rounded-full"></div>
-                            <img src={item.img} alt={item.title} className="rounded-full object-cover h-10 w-10" />
+                            <Image width={100} height={100} src={item.img} alt={item.title} className="rounded-full object-cover h-10 w-10" />
                         </div>
                         <div className="flex justify-between items-center w-[150px]">
                             <h3 className="text-sm font-medium">{item.title}</h3>
@@ -92,4 +91,4 @@ const LeftSection = props => {
     )
 }
 
-export default LeftSection
+export default LeftSection;

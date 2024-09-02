@@ -2,123 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@font-face{font-family:'Hauora';src:url('/fonts/Hauora-ExtraBold.woff2')format('woff2'),url('/fonts/Hauora-ExtraBold.woff')format('woff');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'Hauora';src:url('/fonts/Hauora-Bold.woff2')format('woff2'),url('/fonts/Hauora-Bold.woff')format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Hauora';src:url('/fonts/Hauora-Medium.woff2')format('woff2'),url('/fonts/Hauora-Medium.woff')format('woff');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Hauora';src:url('/fonts/Hauora-Regular.woff2')format('woff2'),url('/fonts/Hauora-Regular.woff')format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Hauora';src:url('/fonts/Hauora-Light.woff2')format('woff2'),url('/fonts/Hauora-Light.woff')format('woff');font-weight:300;font-style:normal;font-display:swap}
 
-/* fonts start /////////////// */
+.loading-wrapper{position:absolute;top:85%;left:50%;transform:translate(-50%,-50%);width:1200px}
+/*mobile*/
+@media only screen and (max-width: 468px) {.loading-wrapper{width:340px}}
+.loading-bar{height:18px;width:100%;background-color:#eceaea;border-radius:20px;overflow:hidden;position:relative}
+.loading-fill{height:100%;width:100%;background-color:#ff8200;position:absolute;border-radius:20px;top:0;left:-100%;animation:loadingAnimation 3s forwards}
+@keyframes loadingAnimation{to{left:0}}
 
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-ExtraBold.woff2') format('woff2'),
-    url('/fonts/Hauora-ExtraBold.woff') format('woff');
-  font-weight: 800;
-  /* Extra Bold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-Bold.woff2') format('woff2'),
-    url('/fonts/Hauora-Bold.woff') format('woff');
-  font-weight: 700;
-  /* Bold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-SemiBold.woff2') format('woff2'),
-    url('/fonts/Hauora-SemiBold.woff') format('woff');
-  font-weight: 600;
-  /* SemiBold */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-Medium.woff2') format('woff2'),
-    url('/fonts/Hauora-Medium.woff') format('woff');
-  font-weight: 500;
-  /* Medium */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-Regular.woff2') format('woff2'),
-    url('/fonts/Hauora-Regular.woff') format('woff');
-  font-weight: 400;
-  /* Regular */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hauora';
-  src: url('/fonts/Hauora-Light.woff2') format('woff2'),
-    url('/fonts/Hauora-Light.woff') format('woff');
-  font-weight: 300;
-  /* Light */
-  font-style: normal;
-}
-
-/*fonts end /////////////// */
-
-/* In a global CSS file or module CSS file */
-
-/*loading animation /===================/*/
-
-.loading-wrapper {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1200px; /* Adjust the width as needed */
-}
-
-.loading-bar {
-  height: 18px; /* Adjust height as needed */
-  width: 100%;
-  background-color: #eceaea; /* Gray background */
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-.loading-fill {
-  height: 100%;
-  width: 100%;
-  background-color: #ff8200; /* Orange fill */
-  position: absolute;
-  border-radius: 20px;
-  top: 0;
-  left: -100%;
-  animation: loadingAnimation 3s forwards;
-}
-
-@keyframes loadingAnimation {
-  to {
-      left: 0;
-  }
-}
-
-/*end loading animation /===================/*/
-
-.shadow-card-tp {
-  box-shadow: 14px 5px 0px #f6f6f6;
-}
-
-.shadow-card-bt {
-  box-shadow: 14px -5px 0px #f6f6f6;
-}
-
-.shadow-card-lb {
-  box-shadow: -11px 11px 0px 10px #f6f6f6;
-}
-
-.shadow-overflow {
-  box-shadow: 10px 10px 0px #f6f6f6;
-}
-
+.shadow-card-tp{box-shadow:14px 5px 0 #f6f6f6}
+.shadow-card-bt{box-shadow:14px -5px 0 #f6f6f6}
+.shadow-card-lb{box-shadow:-11px 11px 0 10px #f6f6f6}
+.shadow-overflow{box-shadow:10px 10px 0 #f6f6f6}
