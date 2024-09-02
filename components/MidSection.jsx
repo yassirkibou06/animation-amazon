@@ -56,7 +56,7 @@ const MidSection = () => {
                 <BiRightArrowAlt size={23} />
             </div>
             <div className="z-0 absolute top-1/2 -right-1 transform -translate-y-1/2 rounded-bl-[110px] rounded-tl-[110px] w-[75px] h-[120px] bg-primary"></div>
-            <div className="z-0 absolute top-[300px] lg:top-[352px] right-0 rounded-br-[120px] w-[40px] h-[80px] bg-transparent shadow-card-tp"></div>
+            <div className="z-0 absolute top-[250px] lg:top-[352px] right-0 rounded-br-[120px] w-[40px] h-[80px] bg-transparent shadow-card-tp"></div>
             <div className="z-0 absolute top-[390px] lg:top-[544px] right-0 rounded-tr-[120px] w-[40px] h-[80px] bg-transparent shadow-card-bt"></div>
             {/**Content */}
             <div className="absolute top-[48%] lg:top-[55%] left-4 lg:left-8 transform -translate-y-1/2 w-[500px]">
