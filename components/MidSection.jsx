@@ -95,7 +95,7 @@ const MidSection = () => {
             <div className="hidden lg:block z-0 absolute bottom-0 left-[550px] rounded-bl-[90px] w-[88px] h-[90px] bg-transparent shadow-card-lb"></div>
             <div className="hidden lg:block z-0 absolute bottom-0 left-[460px] w-[100px] h-[42px] bg-primary shadow-overflow"></div>
             {/**======= */}
-            <div className="absolute bottom-10 right-4 lg:right-4 2xl:right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
+            <div className="absolute bottom-10 right-4 lg:right-4 1xl:right-8 flex items-center text-gray-400 bg-accent py-4 px-8 rounded-[90px]">
                 <div className="flex items-center flex-col rounded-sm border-r border-r-gray-300 px-6">
                     <BiHeart size={27} />
                     <p className="font-light text-sm">14K</p>
